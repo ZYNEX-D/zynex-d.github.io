@@ -1790,14 +1790,14 @@ h1, h2, h3, h4,
         .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
           font-weight: 500;
           display: inline-block;
-          background: #fb83b5;
-          background: -moz-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-          background: -webkit-gradient(left bottom, right top, color-stop(0%, #fb83b5), color-stop(100%, #9a51ff));
-          background: -webkit-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-          background: -o-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-          background: -ms-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-          background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83b5', endColorstr='#9a51ff', GradientType=1 );
+          background: #000000;
+          background: -moz-linear-gradient(45deg, #000000 0%, #001010 100%);
+          background: -webkit-gradient(left bottom, right top, color-stop(0%, #000000), color-stop(100%, #001010));
+          background: -webkit-linear-gradient(45deg, #000000 0%, #001010 100%);
+          background: -o-linear-gradient(45deg, #000000 0%, #001010 100%);
+          background: -ms-linear-gradient(45deg, #000000 0%, #001010 100%);
+          background: linear-gradient(45deg, #000000 0%, #001010 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#001010', GradientType=1 );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -2421,14 +2421,14 @@ h1, h2, h3, h4,
     border-radius: 50%; }
     .services-img .icon span {
       font-size: 30px;
-      background: #fb83b5;
-      background: -moz-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #fb83b5), color-stop(100%, #9a51ff));
-      background: -webkit-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-      background: -o-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-      background: -ms-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-      background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83b5', endColorstr='#9a51ff', GradientType=1 );
+      background: #000000;
+      background: -moz-linear-gradient(45deg, #000000 0%, #001010 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, #000000), color-stop(100%, #001010));
+      background: -webkit-linear-gradient(45deg, #000000 0%, #001010 100%);
+      background: -o-linear-gradient(45deg, #000000 0%, #001010 100%);
+      background: -ms-linear-gradient(45deg, #000000 0%, #001010 100%);
+      background: linear-gradient(45deg, #000000 0%, #001010 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#001010', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -2457,7 +2457,7 @@ h1, h2, h3, h4,
 
 .ftco-partner {
   padding: 5em 0;
-  background: #233142; }
+  background: #002020; }
   .ftco-partner .partner {
     display: block;
     padding: 0 20px; }
@@ -2501,7 +2501,7 @@ textarea.form-control {
   font-size: 16px;
   padding: 7em 0;
   padding-bottom: 3em;
-  background: #233142; }
+  background: #002020; }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
@@ -2843,14 +2843,14 @@ textarea.form-control {
     content: '';
     z-index: -1;
     opacity: .9;
-    background: #fb83b5;
-    background: -moz-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #fb83b5), color-stop(100%, #9a51ff));
-    background: -webkit-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -o-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -ms-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83b5', endColorstr='#9a51ff', GradientType=1 ); }
+    background: #000000;
+    background: -moz-linear-gradient(45deg, #000000 0%, #001010 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #000000), color-stop(100%, #001010));
+    background: -webkit-linear-gradient(45deg, #000000 0%, #001010 100%);
+    background: -o-linear-gradient(45deg, #000000 0%, #001010 100%);
+    background: -ms-linear-gradient(45deg, #000000 0%, #001010 100%);
+    background: linear-gradient(45deg, #000000 0%, #001010 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#001010', GradientType=1 ); }
 
 .ftco-counter {
   padding: 5em 0; }
