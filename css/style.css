@@ -1941,14 +1941,14 @@ h1, h2, h3, h4,
   .owl-carousel.home-slider {
     z-index: 0;
     position: relative;
-    background: #fb83b5;
-    background: -moz-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #fb83b5), color-stop(100%, #9a51ff));
-    background: -webkit-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -o-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: -ms-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83b5', endColorstr='#9a51ff', GradientType=1 ); }
+    background: #000000;
+    background: -moz-linear-gradient(45deg, #000000 0%, #105050 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #000000), color-stop(100%, #105050));
+    background: -webkit-linear-gradient(45deg, #000000 0%, #105050 100%);
+    background: -o-linear-gradient(45deg, #000000 0%, #105050 100%);
+    background: -ms-linear-gradient(45deg, #000000 0%, #105050 100%);
+    background: linear-gradient(45deg, #000000 0%, #105050 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#105050', GradientType=1 ); }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
@@ -1968,14 +1968,14 @@ h1, h2, h3, h4,
         content: '';
         opacity: .95;
         z-index: -1;
-        background: #fb83b5;
-        background: -moz-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-        background: -webkit-gradient(left bottom, right top, color-stop(0%, #fb83b5), color-stop(100%, #9a51ff));
-        background: -webkit-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-        background: -o-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-        background: -ms-linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-        background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83b5', endColorstr='#9a51ff', GradientType=1 ); }
+        background: #000000;
+        background: -moz-linear-gradient(45deg, #000000 0%, #105050 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, #000000), color-stop(100%, #105050));
+        background: -webkit-linear-gradient(45deg, #000000 0%, #105050 100%);
+        background: -o-linear-gradient(45deg, #000000 0%, #105050 100%);
+        background: -ms-linear-gradient(45deg, #000000 0%, #105050 100%);
+        background: linear-gradient(45deg, #000000 0%, #105050 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#105050', GradientType=1 ); }
       .owl-carousel.home-slider .slider-item .overlay {
         z-index: -1;
         position: absolute;
