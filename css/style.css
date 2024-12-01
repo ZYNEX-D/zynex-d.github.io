@@ -3275,3 +3275,9 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+      -ms-touch-action: pan-y !important;
+      touch-action: pan-y !important;
+  }
