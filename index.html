@@ -11,16 +11,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;display=swap" rel="stylesheet" />
       <script type="module" crossorigin src="assets/app.446fa6c4.js"></script>
       <link rel="stylesheet" href="assets/app.fc1f4517.css">
+      <link rel="stylesheet" href="assets/styles.css">
 
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <link href = "typewriter/typewriter.css" rel = "stylesheet">
+     
     </head>
     <body class="min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
         <header>
             <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 py-5 lg:py-4">
-                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                            <a href="index.html" aria-label="logo" class="flex items-center space-x-2 w-32">
-                                <img class="w-full drop-shadow-md" src="images/logo-home.png" alt="">
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max" data-aos="fade" data-aos-duration="2000" data-aos-delay="3000">
+                            <a href="index.html" aria-label="logo" class="flex items-center space-x-2 w-40">
+                                <img class="w-full drop-shadow-md hidden dark:block" src="images/logo-home.png" alt="">
+                                <img class="w-full drop-shadow-md block dark:hidden opacity-80" src="images/logo-home-dark.png" alt="">
                             </a>
 
                             <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -32,27 +39,27 @@
                         <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
                             <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
                                 <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
-                                    <li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
                                         <a href="pages/solution.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Solution</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                                         <a href="pages/customers.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Customers</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
                                         <a href="pages/pricing.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Pricing</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
                                         <a href="pages/blog.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Blog</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
                                         <a href="pages/about.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Company</span>
                                         </a>
@@ -60,12 +67,12 @@
                                 </ul>
                             </div>
 
-                            <div class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                            <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2500" class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
                                 <a href="pages/contact.html" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
                                     <span class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Get started</span>
                                 </a>
                             </div>
-                            <button aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                            <button data-aos="fade-left" data-aos-duration="3000" data-aos-delay="2750" aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                                 </svg>
@@ -93,7 +100,7 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative">
                     <h1 class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl lg:text-left lg:text-7xl">
-                        ZYNEX
+                        <span class="" data-aos="fade" data-aos-duration="3000" data-aos-delay="0">ZYNEX</span>
                         <span class="relative">
                             <svg class="absolute inset-x-0 -bottom-1 w-full opacity-50" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 260 15.6">
                                 <style>
@@ -108,14 +115,14 @@
                                 />
                                 <path class="st0" d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z" />
                             </svg>
-                            <span class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:px-2">Developments</span>
+                            <span class="main-text-2 relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:px-2">Developments</span>
                         </span>
                     </h1>
 
                     <div class="relative items-center gap-12 lg:flex">
                         <div class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
-                            <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">Computers used to be magical. But much of that magic has been lost over time, replaced by subpar tools and practices that slow teams down and hold great work back.</p>
-                            <form action="#" class="mt-12">
+                            <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl" data-typewriter = "on" data-typewriter-loop = "noloop">Merge your ideas with our digital creativity.</p>
+                            <form action="#" class="mt-12" data-aos="fade" data-aos-duration="2000" data-aos-delay="1000">
                                 <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark dark:text-white md:p-2 lg:pr-3">
                                     <div class="py-3 pl-4 lg:pl-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -135,8 +142,8 @@
                                 </div>
                             </form>
                             <div class="mt-12 hidden lg:block">
-                                <span class="text-gray-700 dark:text-white">From the most talented <a href="customers.html" class="text-primary underline dark:text-primaryLight">Team</a> !</span>
-                                <div class="mt-5 flex -space-x-1 children:h-10 children:w-10 children:rounded-full children:object-cover children:ring-4 children:ring-gray-100 dark:children:ring-gray-900">
+                                <span class="text-gray-700 dark:text-white" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000">From the most talented <a href="customers.html" class="text-primary underline dark:text-primaryLight">Team</a> !</span>
+                                <div data-aos="fade" data-aos-duration="2000" data-aos-delay="3000" class="mt-5 flex -space-x-1 children:h-10 children:w-10 children:rounded-full children:object-cover children:ring-4 children:ring-gray-100 dark:children:ring-gray-900">
                                     <img src="images/avatars/avatar.webp" alt="user avatar" width="400" height="400" />
                                     <img src="images/avatars/avatar-1.webp" alt="user avatar" width="200" height="200" />
                                     <img src="images/avatars/avatar-2.webp" alt="user avatar" width="200" height="200" />
@@ -145,8 +152,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
-                            <img class="w-full" src="images/dashboard_full_1.png" class="w-full" alt="team illustration" height="600" width="800" />
+                        <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12 p-10">
+                            <img class="w-full main-image" data-aos="fade" data-aos-duration="3000" data-aos-delay="3000" src="images/dashboard_full_1.png" class="w-full" alt="team illustration" height="600" width="800" />
                         </div>
                     </div>
                     <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20">
@@ -577,6 +584,12 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            AOS.init();
+        </script>
+        <script src = "typewriter/typewriter.js"></script>
+    
 
         
     </body>
