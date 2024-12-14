@@ -1,7 +1,3 @@
-.main-image{
-    filter: drop-shadow(3px 12px 25px #77767bcd);
-}
-
 .main-text-2{
 	-webkit-animation: text-flicker-in-glow 4s linear both;
 	        animation: text-flicker-in-glow 4s linear both;
