@@ -17,9 +17,19 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
       <link href = "typewriter/typewriter.css" rel = "stylesheet">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
      
     </head>
-    <body class="min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900 max-w-screen overflow-x-hidden">
+    <body class="min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900 max-w-screen overflow-x-hidden cursor-hidden">
+
+
+
+        <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas>
+
+
         <header>
             <nav id="navbar" class="fixed max-w-screen inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -142,7 +152,7 @@
                                 </div>
                             </form>
                             <div class="mt-12 hidden lg:block">
-                                <span class="text-gray-700 dark:text-white" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000">From the most talented <a href="customers.html" class="text-primary underline dark:text-primaryLight">Team</a> !</span>
+                                <span class="text-gray-700 dark:text-white" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000">From the most talented <a href="" class="text-primary underline dark:text-primaryLight">Team</a> !</span>
                                 <div data-aos="fade" data-aos-duration="2000" data-aos-delay="3000" class="mt-5 flex -space-x-1 children:h-10 children:w-10 children:rounded-full children:object-cover children:ring-4 children:ring-gray-100 dark:children:ring-gray-900">
                                     <img src="images/avatars/tharuux.jpg" alt="user avatar" width="400" height="400" />
                                     <img src="images/avatars/lakshi.jpg" alt="user avatar" width="200" height="200" />
@@ -150,7 +160,7 @@
                             </div>
                         </div>
                         <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12 p-10">
-                            <img class="w-full main-image py-5 drop-shadow-[3px_15px_25px_#9f8bfacd] dark:drop-shadow-[3px_15px_25px_#9f8bfa00]" data-aos="fade" data-aos-duration="3000" data-aos-delay="3000" src="images/dashboard_full_1.png" class="w-full" alt="team illustration" height="600" width="800" />
+                            <img class="w-full main-image py-5 drop-shadow-[3px_15px_25px_#9f8bfacd] dark:drop-shadow-[3px_15px_25px_#9f8bfa00]" data-aos="fade" data-aos-duration="3000" data-aos-delay="3000" src="images/dashboard_full_3.png" class="w-full" alt="team illustration" height="600" width="800" />
                         </div>
                     </div>
                     <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20">
@@ -308,8 +318,8 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="space-y-6 md:flex lg:items-center lg:gap-6 lg:space-y-0">
                     <div class="md:5/12 lg:w-6/12" data-aos="fade" data-aos-duration="3000" data-aos-delay="500">
-                        <img class="md:-ml-8 hidden dark:block drop-shadow-md" src="images/logo/dark.png" alt="tailus stats and login components" loading="lazy" width="1779" height="1592" />
-                        <img class="md:-ml-8 block dark:hidden drop-shadow-md" src="images/logo/light.png" alt="tailus stats and login components" loading="lazy" width="1779" height="1592" />
+                        <img class="md:-ml-8 hidden dark:block drop-shadow-md" src="images/logo/dark.png" alt="zynex logo" loading="lazy" width="1779" height="1592" />
+                        <img class="md:-ml-8 block dark:hidden drop-shadow-md" src="images/logo/light.png" alt="zynex logo" loading="lazy" width="1779" height="1592" />
                     </div>
                     <div class="md:7/12 lg:w-6/12">
                         <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">Who we are</h2>
