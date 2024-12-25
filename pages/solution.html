@@ -12,19 +12,28 @@
         <title>ZYNEX | Solutions</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;display=swap" rel="stylesheet" />
-      <script type="module" crossorigin src="../assets/app.446fa6c4.js"></script>
-      <link rel="stylesheet" href="../assets/app.fc1f4517.css">
+        <script type="module" crossorigin src="../assets/app.446fa6c4.js"></script>
+        <link rel="stylesheet" href="../assets/app.fc1f4517.css">
+        <link rel="stylesheet" href="../assets/styles.css">
 
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
     </head>
-    <body class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <body class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900 cursor-hidden">
+
+        <div class="cursor cursor--small"></div>
+        <canvas class="cursor cursor--canvas" resize></canvas>
+
         <header>
             <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 py-5 lg:py-4">
                         <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max" data-aos="fade" data-aos-duration="2000" data-aos-delay="0">
-                            <a href="../index.html" aria-label="logo" class="flex items-center space-x-2 w-40">
+                            <a href="../index" aria-label="logo" class="flex items-center space-x-2 w-40">
                                 <img class="w-full drop-shadow-md hidden dark:block" src="../images/logo-home.png" alt="">
                                 <img class="w-full drop-shadow-md block dark:hidden opacity-80" src="../images/logo-home-dark.png" alt="">
                             </a>
@@ -39,27 +48,27 @@
                             <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
                                 <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                     <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
-                                        <a href="solution.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
+                                        <a href="solution" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Solutions</span>
                                         </a>
                                     </li>
                                     <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-                                        <a href="websites.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
+                                        <a href="websites" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Websites</span>
                                         </a>
                                     </li>
                                     <!--<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-                                        <a href="pricing.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
+                                        <a href="pricing" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Pricing</span>
                                         </a>
                                     </li>-->
                                     <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                                        <a href="portfolio.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
+                                        <a href="portfolio" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>Portfolio</span>
                                         </a>
                                     </li>
                                     <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                                        <a href="about.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
+                                        <a href="about" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
                                             <span>About</span>
                                         </a>
                                     </li>
@@ -67,7 +76,7 @@
                             </div>
 
                             <div data-aos="fade" data-aos-duration="2000" data-aos-delay="400" class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                                <a href="contact.html" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
+                                <a href="contact" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
                                     <span class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Contact</span>
                                 </a>
                             </div>
@@ -177,12 +186,12 @@
                                 <p class="text-gray-600 dark:text-gray-400">Please provide us with a detailed document outlining your requirements. Based on your input, we will prepare a Functional Requirements Document (FRD) for your review. You’ll need to approve the FRD to proceed. If you identify any issues or need adjustments, revisions can be made before final acceptance.</p>
                                 <p class="text-gray-600 dark:text-gray-400">The pricing will depend on your specific requirements. We will also propose similar systems from our portfolio to help reduce costs and ensure faster deployment.</p>
                             </div>
-                            <a href="#" class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-                                <span class="text-sm">Read more</span>
+                            <adiv class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+                                <span class="text-sm">First step</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                                     <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
                                 </svg>
-                            </a>
+                            </adiv>
                         </div>
                     </div>
                     <div class="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
@@ -190,44 +199,28 @@
                             <img src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png" loading="lazy" class="w-12" width="512" height="512" alt="burger illustration" />
                             <div class="space-y-2">
                                 <h3 class="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Developing</h3>
-                                <p class="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+                                <p class="text-gray-600 dark:text-gray-400">Once the Functional Requirements Document (FRD) is accepted, we commence development based on the agreed-upon terms and conditions. The development timeline is determined by the complexity and scope of your requirements.</p>
+                                <p class="text-gray-600 dark:text-gray-400">we prioritize delivering high-quality results within a reasonable timeframe. While we strive to meet deadlines, we also focus on ensuring your solution is robust, efficient, and tailored to your needs. Rest assured, we will keep you informed at every stage of the development process.</p>
                             </div>
-                            <a href="#" class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-                                <span class="text-sm">Read more</span>
+                            <div  class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+                                <span class="text-sm">Second step</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                                     <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
                                 </svg>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
                         <div class="relative space-y-8 p-8 py-12">
-                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" loading="lazy" class="w-12" width="512" height="512" alt="burger illustration" />
+                            <img src="https://cdn-icons-png.flaticon.com/128/4334/4334058.png" loading="lazy" class="w-12" width="512" height="512" alt="burger illustration" />
                             <div class="space-y-2">
-                                <h3 class="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Third feature</h3>
-                                <p class="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+                                <h3 class="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Deployment & Maintaince</h3>
+                                <p class="text-gray-600 dark:text-gray-400">After developing the system or solution, we primarily deploy it on our servers and provide you with secure login credentials. You will have the opportunity to perform a test run with your preferred deployment type. Comprehensive guidance will be provided, and our team is always available to answer any questions about the system at any time.</p>
+                                <p class="text-gray-600 dark:text-gray-400">All our solutions are web-based, allowing you to access your system from anywhere, at any time, ensuring flexibility and convenience for your operations.</p>
                             </div>
-                            <a href="#" class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-                                <span class="text-sm">Read more</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="group relative bg-gray-50 transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900 lg:hidden">
-                        <div class="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
-                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" loading="lazy" class="w-12" width="512" height="512" alt="burger illustration" />
-                            <div class="space-y-2">
-                                <h3 class="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
-                                <p class="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+                            <div class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+                                <span class="text-sm">Done & dusted</span>
                             </div>
-                            <a href="#" class="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-                                <span class="text-sm">Read more</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -238,18 +231,18 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center">
                     <div class="md:5/12 lg:w-6/12">
-                        <img src="../images/stats-login.webp" alt="tailus stats and login components" loading="lazy" width="1779" height="1592" />
+                        <img src="../images/product_page_mockup.png" alt="Product page mockup" class="drop-shadow-md" loading="lazy" width="1779" height="1592" />
                     </div>
                     <div class="md:7/12 lg:w-6/12">
-                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">Development is carried out by passionate developers</h2>
-                        <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-300">Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">E-Commerce Solutions</h2>
+                        <p class="mt-8 text-gray-600 dark:text-gray-300">We offer comprehensive e-commerce solutions designed to enhance your online presence and boost sales. Our services cater to two distinct types of e-commerce platforms, each tailored to suit different needs and budgets.</p>
+                        <p class="mt-4 text-gray-600 dark:text-gray-300">Take your products online, streamline your processes, and watch your sales soar. Whether you’re looking to promote a single product or manage an entire store, we’re here to deliver the best e-commerce solutions for your business. ✨</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="my-32">
+        <!--<section class="my-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center">
                     <div class="md:7/12 order-last md:order-first lg:w-6/12">
@@ -262,54 +255,136 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="bg-gray-50 py-32 dark:bg-darker">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Trusted by leaders</h2>
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Solutions</h2>
                     <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</p>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
-                    <div class="rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
-                        <div class="flex h-full flex-col justify-center space-y-6 md:space-y-8">
-                            <img class="mr-auto h-12 w-auto" src="../images/clients/microsoft.svg" loading="lazy" alt="microsoft" />
-                            <p class="text-gray-600 dark:text-gray-300 md:text-lg lg:text-xl">
-                                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <br />
-                                <br />
-                                Esse, sint sit aut ducimus ea ipsam velit saepe earum dolorem, dignissimos minima voluptate quo accusamus corporis, quaerat beatae aliquid. Impedit, accusamus. <span class="font-serif">"</span>
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img class="h-12 w-12 rounded-full" src="../images/avatars/avatar-2.webp" loading="lazy" alt="user avatar" width="200" height="200" />
-                                <div>
-                                    <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Andy Doe</h3>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img class="h-12 w-auto" src="../images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height="" />
-                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
-                        <div class="flex items-center gap-3 text-left">
-                            <img class="h-12 w-12 rounded-full" src="../images/avatars/avatar-3.webp" alt="user avatar" width="200" height="200" loading="lazy" />
-                            <div>
-                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Janet Doe</h3>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">UX Designer</span>
-                            </div>
-                        </div>
+                    <div class="space-y-6 lg:row-span-2 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                        <h2 class="text-2xl w-auto font-bold text-gray-700 dark:text-white md:text-3xl xl:text-4xl">E-Commerce Product Page</h2>
+                        <p class="text-gray-600 dark:text-gray-100">This solution is specifically crafted for showcasing a single product with full details and an interactive web page that allows users to place orders seamlessly.
+                            Key features include:</p>
+
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-400">
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Dashboard Functionality
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Inventory Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Order Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Reporing
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Customizable features based on your requirements
+                            </li>
+                        </ol>
+
+                        <p class="text-gray-600 dark:text-gray-300">The price is influenced by the number and type of features you choose to include.</p>
+
                     </div>
-                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img class="h-12 w-auto" src="../images/clients/ge.svg" loading="lazy" alt="ge" />
-                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
-                        <div class="flex items-center gap-3 text-left">
-                            <img class="h-12 w-12 rounded-full" src="../images/avatars/avatar-4.webp" alt="user avatar" width="200" height="200" loading="lazy" />
-                            <div>
-                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">John Doe</h3>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
-                            </div>
-                        </div>
+                    <div class="space-y-6 lg:row-span-2 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                        <h2 class="text-2xl w-auto font-bold text-gray-700 dark:text-white md:text-3xl xl:text-4xl">E-Commerce Store</h2>
+                        <p class="text-gray-600 dark:text-gray-100">Ideal for businesses with a broad product range, this solution enables you to showcase and manage multiple products, each with its dedicated page. Customers can easily browse, select, and place orders online. Key features include:</p>
+                        
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-400">
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Dashboard Functionality
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Inventory Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Order Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Reporing
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Customizable features based on your requirements
+                            </li>
+                        </ol>
+
+                        <p class="text-gray-600 dark:text-gray-300">The price is influenced by the number and type of features you choose to include.</p>
+
+                    </div>
+                    <div class="space-y-6 lg:row-span-2 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                        <h2 class="text-2xl w-auto font-bold text-gray-700 dark:text-white md:text-3xl xl:text-4xl">Inventory Management System</h2>
+                        <p class="text-gray-600 dark:text-gray-100">Ideal for businesses with a broad product range, this solution enables you to showcase and manage multiple products, each with its dedicated page. Customers can easily browse, select, and place orders online. Key features include:</p>
+                        
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-400">
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Dashboard Functionality
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Inventory Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Order Management
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Reporing
+                            </li>
+                            <li class="font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-secondary dark:text-secondaryLight">
+                                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Customizable features based on your requirements
+                            </li>
+                        </ol>
+
+                        <p class="text-gray-600 dark:text-gray-300">The price is influenced by the number and type of features you choose to include.</p>
+
                     </div>
                 </div>
             </div>
@@ -319,10 +394,10 @@
             <div class="container m-auto px-6 text-center md:px-12 lg:px-20">
                 <div class="relative mx-auto flex h-56 w-56 items-center justify-center mb-20" data-aos="fade" data-aos-duration="2000" data-aos-delay="0">
                     <div class="it absolute inset-0 flex flex-wrap opacity-40 blur-3xl dark:opacity-70">
-                        <div aria-hidden="true" class="h-1/2 w-1/2 bg-primary"></div>
-                        <div aria-hidden="true" class="h-1/2 w-1/2 bg-purple-500"></div>
-                        <div aria-hidden="true" class="h-1/2 w-1/2 rounded-bl-full bg-secondary"></div>
-                        <div aria-hidden="true" class="h-1/2 w-1/2 rounded-br-full bg-secondaryLight"></div>
+                        <div aria-hidden="true" class="h-1/2 w-1/2 bg-primary" data-aos="fade" data-aos-duration="1000" data-aos-delay="0"></div>
+                        <div aria-hidden="true" class="h-1/2 w-1/2 bg-purple-500" data-aos="fade" data-aos-duration="1000" data-aos-delay="2000"></div>
+                        <div aria-hidden="true" class="h-1/2 w-1/2 rounded-bl-full bg-secondary" data-aos="fade" data-aos-duration="1000" data-aos-delay="3000"></div>
+                        <div aria-hidden="true" class="h-1/2 w-1/2 rounded-br-full bg-secondaryLight" data-aos="fade" data-aos-duration="1000" data-aos-delay="1000"></div>
                     </div>
                     <img class="hidden dark:block" src="../images/logo/dark.png" alt="Zynex Logo">
                     <img class="block dark:hidden" src="../images/logo/light.png" alt="Zynex Logo">
@@ -342,8 +417,8 @@
                             <span class="relative px-2 text-blue-800 dark:text-indigo-200">Business</span>
                         </span>
                     </h2>
-                    <p class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-1/2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">Saepe nulla ab nobis itaque corporis fuga illo doloribus sequi esse aspernatur impedit nihil quisquam, voluptates placeat architecto adipisci id cum enim.</p>
-                    <a href="contact.html" data-aos="fade" data-aos-duration="3000" data-aos-delay="1000" class="relative mx-auto flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight">
+                    <p class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-1/2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">We provide tailored solutions and systems for small and medium-sized enterprises (SMEs) at the most affordable prices. Our commitment is to deliver exceptional quality at the best value. </p>
+                    <a href="contact" data-aos="fade" data-aos-duration="3000" data-aos-delay="500" class="relative mx-auto flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight">
                         <span class="relative text-base font-semibold text-white dark:text-gray-900" >Get started</span>
                     </a>
                 </div>
@@ -357,7 +432,7 @@
                         <div class="col-span-8 md:col-span-2 lg:col-span-3">
                             <div class="flex h-full items-center justify-between gap-6 border-b border-white py-6 dark:border-gray-800 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
                                 <div>
-                                    <a href="index.html" aria-label="ZYNEX logo" class="flex items-center">
+                                    <a href="index" aria-label="ZYNEX logo" class="flex items-center">
                                         <img src="images/logo-home.png" class="w-32 hidden dark:block" alt="">
                                         <img src="images/logo-home-dark.png" class="w-32 block dark:hidden" alt="">
                                     </a>
@@ -393,22 +468,22 @@
                                     <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">ULRs</h2>
                                     <ul class="mt-4 list-inside space-y-4">
                                         <li>
-                                            <a href="solution.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Solutions</a>
+                                            <a href="solution" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Solutions</a>
                                         </li>
                                         <li>
-                                            <a href="websites.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Websites</a>
+                                            <a href="websites" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Websites</a>
                                         </li>
                                         <!--<li>
                                             <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Pricing</a>
                                         </li>-->
                                         <li>
-                                            <a href="portfolio.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolio</a>
+                                            <a href="portfolio" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolio</a>
                                         </li>
                                         <li>
-                                            <a href="about.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About Us</a>
+                                            <a href="about" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="contact.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Contact Us</a>
+                                            <a href="contact" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -470,5 +545,5 @@
         
     </body>
 
-<!-- Mirrored from ampire.tailus.io/pages/solution.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 11:57:56 GMT -->
+<!-- Mirrored from ampire.tailus.io/pages/solution by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 11:57:56 GMT -->
 </html>
