@@ -72,6 +72,19 @@ html{
   z-index: 12000;
 }
 
+a{
+  cursor: none;
+}
+
+button {
+  cursor: none; /* Hides the cursor */
+  transition: transform 200ms ease-in-out, filter 300ms ease-in-out; /* Adds transition for both filter and transform properties */
+}
+
+button:hover {
+  filter: brightness(130%); /* Slightly increases brightness on hover */
+}
+
 
 
 .cursor-pointer{
