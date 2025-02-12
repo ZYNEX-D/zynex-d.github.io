@@ -48,22 +48,22 @@
                             <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">ULRs</h2>
                             <ul class="mt-4 list-inside space-y-4">
                                 <li>
-                                    <a href="pages/solution.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Solutions</a>
+                                    <a href="pages/service.php" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Solutions</a>
                                 </li>
                                 <li>
-                                    <a href="pages/websites.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Websites</a>
+                                    <a href="pages/websites.php" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Websites</a>
                                 </li>
                                 <!--<li>
                                     <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Pricing</a>
                                 </li>-->
                                 <li>
-                                    <a href="pages/portfolio.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolio</a>
+                                    <a href="pages/portfolio.php" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a href="pages/about.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About Us</a>
+                                    <a href="pages/about.php" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="pages/contact.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Contact Us</a>
+                                    <a href="pages/contact.php" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Contact Us</a>
                                 </li>
                             </ul>
                         </div>

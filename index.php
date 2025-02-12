@@ -153,7 +153,7 @@
                             </div>
                             <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500" id="panel-1">
                                 <div>
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0">Our syatem solutions</h3>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0">Our system solutions</h3>
                                     <p class="mt-8 text-gray-600 dark:text-gray-300" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
                                         Our system solutions are tailored to streamline your operations, enhance accessibility, and meet your unique business needs.
                                     </p>
