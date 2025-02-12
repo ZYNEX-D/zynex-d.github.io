@@ -94,11 +94,11 @@ button:hover {
 .cursor-hidden{
   cursor: none;
 }
-
+/*
 .main-text-2{
 	-webkit-animation: text-flicker-in-glow 4s linear both;
 	        animation: text-flicker-in-glow 4s linear both;
-}
+}*/
 
  @-webkit-keyframes text-flicker-in-glow {
     0% {

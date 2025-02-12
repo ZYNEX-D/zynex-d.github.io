@@ -2,112 +2,24 @@
 <html lang="en">
     
 <head>
-        <meta charset="UTF-8" />
+<meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="../images/logo-HOME.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="ZYNEX Web Development Agency specializes in creating stunning websites, dynamic web applications, and engaging designs with cutting-edge technologies.">
         <meta name="keywords" content="ZYNEX, Web Development Agency, Web Design, Web Development, Website Development, Responsive Websites, Front-End Development, Creative Web Solutions, ZYNEX Agency, Professional Web Services">
         <meta name="author" content="ZYNEX">
         <link rel="apple-touch-icon" href="images/logo-HOME.svg"> 
-        <title>ZYNEX | Solutions</title>
+        <title>ZYNEX | Services</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;display=swap" rel="stylesheet" />
-        <script type="module" crossorigin src="../assets/app.446fa6c4.js"></script>
-        <link rel="stylesheet" href="../assets/app.fc1f4517.css">
-        <link rel="stylesheet" href="../assets/styles.css">
-
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <?php include 'components/includes.php' ?>
 
     </head>
     <body class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900 cursor-hidden">
 
-        <div class="cursor cursor--small"></div>
-        <canvas class="cursor cursor--canvas" resize></canvas>
-
-        <header>
-            <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
-                <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 py-5 lg:py-4">
-                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max" data-aos="fade" data-aos-duration="2000" data-aos-delay="0">
-                            <a href="../" aria-label="logo" class="flex items-center space-x-2 w-40">
-                                <img class="w-full drop-shadow-md hidden dark:block" src="../images/logo-home.png" alt="">
-                                <img class="w-full drop-shadow-md block dark:hidden opacity-80" src="../images/logo-home-dark.png" alt="">
-                            </a>
-
-                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
-                                <div aria-hidden="true" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
-                                <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
-                            </button>
-                        </div>
-                        <div id="layer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden"></div>
-                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
-                            <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
-                                <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
-                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
-                                        <a href="../" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>Home</span>
-                                        </a>
-                                    </li>
-                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-                                        <a href="solution.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>Solutions</span>
-                                        </a>
-                                    </li>
-                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                                        <a href="websites.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>Websites</span>
-                                        </a>
-                                    </li>
-                                    <!--<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-                                        <a href="pricing" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>Pricing</span>
-                                        </a>
-                                    </li>-->
-                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                                        <a href="portfolio.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>Portfolio</span>
-                                        </a>
-                                    </li>
-                                    <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-                                        <a href="about.html" class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4">
-                                            <span>About</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div data-aos="fade" data-aos-duration="2000" data-aos-delay="400" class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                                <a href="contact.html" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
-                                    <span class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Contact</span>
-                                </a>
-                            </div>
-                            <button data-aos="fade" data-aos-duration="2000" data-aos-delay="500" aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="fixed top-3 right-14 z-20 p-4 sm:right-24 lg:hidden" data-aos-duration="2000" data-aos-delay="500">
-                            <button aria-label="switche theme" class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php 
+            include 'components/customcursor.php';
+            include 'components/header.php';
+        ?>
 
         <section class="pt-32 sm:pt-36 md:pt-40 lg:pt-36">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -120,8 +32,8 @@
                                     <svg class="absolute inset-x-0 -bottom-1 w-full opacity-50" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 260 15.6">
                                         <style>
                                             .st0 {
-    fill: #957fef
-}
+                                            fill: #957fef
+                                        }
                                         </style>
                                         <path class="st0" d="M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z" />
                                         <path
@@ -130,7 +42,7 @@
                                         />
                                         <path class="st0" d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z" />
                                     </svg>
-                                    <span class="relative bg-gradient-to-r from-primaryLight to-secondary bg-clip-text text-transparent dark:to-secondaryLight">ZYNEX Solution.</span>
+                                    <span class="relative bg-gradient-to-r from-primaryLight to-secondary bg-clip-text text-transparent dark:to-secondaryLight">ZYNEX Services.</span>
                                 </span>
                             </h1>
                             <p class="mt-12 text-center text-lg text-gray-600 dark:text-gray-300 sm:text-xl lg:text-left" data-aos="fade" data-aos-duration="2000" data-aos-delay="1000">
@@ -247,20 +159,20 @@
             </div>
         </section>
 
-        <!--<section class="my-32">
+        <section class="my-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center">
                     <div class="md:7/12 order-last md:order-first lg:w-6/12">
-                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">Development is carried out by passionate developers</h2>
-                        <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-                        <p class="mt-4 text-gray-600 dark:text-gray-300">Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl" data-aos="fade-up" data-aos-delay="" data-aos-duration="1000">Social Media Promotions</h2>
+                        <p data-aos="fade" data-aos-delay="1000" data-aos-duration="500" class="mt-8 text-gray-600 dark:text-gray-300">We offer affordable social media promotion services designed to help you grow your followers, likes, shares, and comments. Whether it's a profile, page, or channel, we provide tailored packages that suit your specific needs and budget.</p>
+                        <p data-aos="fade" data-aos-delay="1000" data-aos-duration="1000" class="mt-4 text-gray-600 dark:text-gray-300">With our services, you can increase your visibility and engagement across all social media platforms. Let us help you expand your online presence and reach a broader audience.</p>
                     </div>
                     <div class="md:5/12 order-first md:order-last lg:w-6/12">
-                        <img src="../images/stats-cards.webp" alt="tailus stat cards components" loading="lazy" width="1446" height="968" />
+                        <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" src="../images/social_media_campaing.png" alt="Product page mockup" class="drop-shadow-md" loading="lazy" width="1779" height="1592" />
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <section class="bg-gray-50 py-32 dark:bg-darker">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -423,130 +335,14 @@
                         </span>
                     </h2>
                     <p class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-1/2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">We provide tailored solutions and systems for small and medium-sized enterprises (SMEs) at the most affordable prices. Our commitment is to deliver exceptional quality at the best value. </p>
-                    <a href="contact.html" data-aos="fade" data-aos-duration="3000" data-aos-delay="500" class="relative mx-auto flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight">
+                    <a href="contact.php" data-aos="fade" data-aos-duration="3000" data-aos-delay="500" class="relative mx-auto flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight">
                         <span class="relative text-base font-semibold text-white dark:text-gray-900" >Get started</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <footer class="border-t border-gray-100 pt-32 pb-8 dark:border-gray-800">
-            <div>
-                <div class="m-auto space-y-8 px-4 text-gray-600 dark:text-gray-400 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div class="grid grid-cols-8 gap-6 md:gap-0">
-                        <div class="col-span-8 md:col-span-2 lg:col-span-3">
-                            <div class="flex h-full items-center justify-between gap-6 border-b border-white py-6 dark:border-gray-800 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
-                                <div>
-                                    <a href="../" aria-label="ZYNEX logo" class="flex items-center">
-                                        <img src="../images/logo-home.png" class="w-32 hidden dark:block" alt="">
-                                        <img src="../images/logo-home-dark.png" class="w-32 block dark:hidden" alt="">
-                                    </a>
-                                    <a href="https://zynex.info/" class="mt-2 inline-block text-sm">Developed by ❤️️ ZYNEX Developments</a>
-                                </div>
-
-                                <div class="flex gap-6">
-                                    <a href="https://github.com/ZYNEX-D" target="blank" aria-label="github" class="hover:text-primary dark:hover:text-primaryLight">
-                                        <span class="sr-only">Github</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                        </svg>
-                                    </a>
-                                    <a href="https://www.facebook.com/people/ZYNEX/61569020353830" target="blank" aria-label="Facebook" class="hover:text-primary dark:hover:text-primaryLight">
-                                        <span class="sr-only">Facebook</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 49 49">
-                                            <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://wa.me/94717541572" target="blank" aria-label="Whatsapp" class="hover:text-primary dark:hover:text-primaryLight">
-                                        <span class="sr-only">Whatsapp</span>
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-github" viewBox="0 0 50 50" fill="currentColor">
-                                            <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-8 md:col-span-6 lg:col-span-5">
-                            <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-cols-3 md:pl-16">
-                                <div>
-                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">ULRs</h2>
-                                    <ul class="mt-4 list-inside space-y-4">
-                                        <li>
-                                            <a href="solution.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Solutions</a>
-                                        </li>
-                                        <li>
-                                            <a href="websites.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Websites</a>
-                                        </li>
-                                        <!--<li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Pricing</a>
-                                        </li>-->
-                                        <li>
-                                            <a href="portfolio.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolio</a>
-                                        </li>
-                                        <li>
-                                            <a href="about.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">Solutions</h2>
-                                    <ul class="mt-4 list-inside space-y-4">
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Developing & Hosting</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">E-Commerce Solutions</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Inventory Management Systems</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Task Management Systems</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">CMS</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">Others</h2>
-                                    <ul class="mt-4 list-inside space-y-4">
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Information Sites</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">E-Commerce Sites</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Business Profiles</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">Portfolios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">CVs</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex justify-between text-sm md:pl-16">
-                                <span>&copy; ZYNEX 2024 - Present</span>
-                                <span>All right reserved</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <script>
-            AOS.init();
-        </script>
-
+        <?php include 'components/footer.php' ?>
         
     </body>
 
