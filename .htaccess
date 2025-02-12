@@ -1,0 +1,9 @@
+
+
+RewriteOptions inherit
+RewriteRule ^websites$ websites.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^portfolio$ portfolio.php [L]
+RewriteRule ^services$ services.php [L]
+RewriteRule ^(.*)$ 404.shtml
